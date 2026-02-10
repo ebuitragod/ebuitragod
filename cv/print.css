@@ -1,134 +1,154 @@
-/* === PRINT STYLES === */
+/* === PRINT STYLES - LAYOUT FIXED === */
 @media print {
-    /* Hide non-essential elements */
-    .no-print,
     .print-button-container,
-    #availability,
-    .project-link {
+    .no-print,
+    #availability {
         display: none !important;
     }
     
-    /* Reset styles for printing */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        forced-color-adjust: auto !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
     body {
-        background: white !important;
-        color: black !important;
-        font-size: 12pt !important;
-        line-height: 1.4 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        width: 100% !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: var(--light-gray);
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+
     }
-    
-    .container {
-        box-shadow: none !important;
-        padding: 0 !important;
-        gap: 15px !important;
-        max-width: 100% !important;
-        display: block !important;
-    }
-    
-    /* Ensure links are black and don't have underline */
+ 
     a {
-        color: black !important;
+        color: inherit !important;
         text-decoration: none !important;
     }
-    
-    /* Adjust contact info for print */
-    .contact-info {
-        justify-content: flex-start !important;
-        flex-wrap: nowrap !important;
-        font-size: 10pt !important;
-        gap: 15px !important;
-        margin-bottom: 15px !important;
+
+    .container {
+        display: grid !important;
+        grid-template-columns: 2fr 1fr !important;
+        gap: 30px !important;
+        padding: 40px !important; 
+        box-shadow: none !important;        
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
     }
     
-    /* Section adjustments */
-    section {
-        margin-bottom: 20px !important;
-        page-break-inside: avoid;
+    .main-content {
+        grid-column: 1 !important;
+        display: block !important;
+        font-size: 0.9em !important;
+    }
+    
+    .sidebar {
+        grid-column: 2 !important;
+        display: block !important;
+        border-left: 2px solid var(--light) !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding-left: 8px !important;
+        padding-right: 0 !important;
+        font-size: 0.8em !important;
+        margin: 0 !important;
+    }
+    
+    header {
+        grid-column: 1 / -1 !important;
+        text-align: center !important;
+        margin-bottom: 15px !important;
+        padding-bottom: 10px !important;
+        border-bottom: 1px solid #ccc !important;
+        flex-direction: column !important;
     }
     
     h1 {
-        font-size: 24pt !important;
-        color: black !important;
-        margin-bottom: 5px !important;
-    }
-    
-    h2 {
-        font-size: 14pt !important;
-        color: black !important;
-        border-bottom: 1px solid #666 !important;
+        font-size: 2em !important;
+        color: var(--primary) !important;
         margin-bottom: 10px !important;
     }
-    
-    h3 {
-        font-size: 12pt !important;
-        color: black !important;
-    }
-    
+
     .tagline {
-        font-size: 12pt !important;
-        color: #666 !important;
+        font-size: 1.2em !important;
+        color: var(--secondary) !important;
+        margin-top: -10px !important;
+    }
+
+    .contact-info {
+        display: inline !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 15px !important; 
+        margin-top: -20px !important;
     }
     
-    /* Layout adjustments for print */
-    .main-content, .sidebar {
-        float: none !important;
-        width: 100% !important;
-        display: block !important;
+    .contact-info div {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 5px !important;
+        white-space: nowrap !important;
+    }
+
+    .contact-info i {
+        display: inline !important;
+        color: var(--primary) !important;
+        margin-left: 20px !important;
+        margin-right: -2px !important;
+        font-size: 0.9em !important;
+    }
+
+    footer {
+        grid-column: 1 / -1;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid var(--light);
+        text-align: center;
     }
     
-    /* Lists */
-    ul {
-        margin-left: 0 !important;
-        padding-left: 20px !important;
+    .edu-item,
+    .job, 
+    .project-item {
+        page-break-inside: auto !important;
+        break-inside: avoid !important;
     }
-    
-    /* Meta information */
-    .meta {
-        font-size: 10pt !important;
-        color: #666 !important;
-    }
-    
-    /* Skills grid */
+
     .skills-grid {
-        display: block !important;
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+        gap: 2px !important;
+        break-inside:auto !important;
     }
-    
+
     .skill-category {
+        margin-top: -10px !important;
+        page-break-before: avoid !important;
+        break-before: auto !important;
+    }
+    
+    section {
+        page-break-inside: auto !important;
+        break-inside: auto !important;
         margin-bottom: 10px !important;
-        page-break-inside: avoid;
     }
     
-    /* Avoid page breaks inside important elements */
-    .job, .project-item, .edu-item {
-        page-break-inside: avoid;
-    }
-    
-    /* Add page breaks where needed */
-    h2, h3 {
-        page-break-after: avoid;
-    }
-    
-    /* Print URLs after links */
-    a[href]:after {
-        content: " (" attr(href) ")";
-        font-size: 9pt;
-        color: #666;
-    }
-    
-    /* Don't show URLs for certain links */
-    .contact-info a[href]:after,
-    a.project-link[href]:after {
-        content: "" !important;
-    }
-    
-    /* Adjust margins for printing */
     @page {
-        margin: 1cm;
+        size: A4;
+        margin-top: 2cm;
+        margin-bottom: 0.5cm !important;
+        margin-left: 1cm;
+        margin-right: 1cm;
     }
     
-    @page :first {
-        margin-top: 1.5cm;
+    :root {
+        --primary: #2c3e50;
+        --secondary: #3498db;
+        --light: #ecf0f1;
+        --border: #e1e8ed;
     }
 }
