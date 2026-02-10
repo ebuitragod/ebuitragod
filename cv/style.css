@@ -237,7 +237,7 @@ h3 {
 #availability {
     background: #f0f8ff;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
     border-left: 4px solid var(--secondary);
 }
 
