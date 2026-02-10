@@ -338,3 +338,47 @@ h3 {
         grid-template-columns: 1fr;
     }
 }
+
+/* Print utility classes */
+@media screen and (max-width: 65rem) {
+    .page-break {
+        display: none;
+    }
+    
+    .no-break {
+        /* Nothing special for screen */
+    }
+    body {
+        background-color: white;
+    }
+    #cv {
+        padding: 2rem;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+}
+
+
+
+/* Compact styles for print optimization */
+@media screen {
+    .compact-text {
+        /* Normal en pantalla */
+    }
+}
+
+@media print {
+    .compact {
+        margin-bottom: 0.3cm !important;
+    }
+    
+    .compact-text {
+        line-height: 1.25 !important;
+        margin-bottom: 0.2cm !important;
+    }
+    
+    /* Adjust spacing between sections */
+    section + section {
+        margin-top: 0.4cm !important;
+    }
+}
