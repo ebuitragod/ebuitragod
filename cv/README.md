@@ -2,8 +2,7 @@
 
 This is my professional CV/Resume, built with HTML/CSS and optimized for both web viewing and PDF printing.
 
-## View Online
-[https://ebuitragod.github.io/cv/](https://ebuitragod.github.io/cv/)
+## [View Online](https://ebuitragod.github.io/ebuitragod/)
 
 ## Features
 - Responsive design (mobile-friendly)
