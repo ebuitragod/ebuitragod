@@ -2,14 +2,12 @@
 :root {
     --primary: #2c3e50;
     --secondary: #3498db;
-    --accent: #e74c3c;
     --light: #ecf0f1;
     --dark: #2c3e50;
     --gray: #7f8c8d;
     --light-gray: #f8f9fa;
-    --border: #ddd;
-    --shadow: rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --border: #e1e8ed;
+    --shadow: rgba(0, 0, 0, 0.08);
 }
 
 /* === BASE STYLES === */
@@ -32,21 +30,15 @@ body {
 a {
     color: var(--secondary);
     text-decoration: none;
-    transition: var(--transition);
 }
 
 a:hover {
     text-decoration: underline;
-    color: var(--primary);
 }
 
 ul {
     list-style-position: inside;
     margin-left: 1em;
-}
-
-section {
-    margin-bottom: 30px;
 }
 
 /* === LAYOUT === */
@@ -75,27 +67,16 @@ header {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 2px solid var(--light);
-    position: relative;
-}
-
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid var(--secondary);
-    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     color: var(--primary);
-    margin-bottom: 5px;
-    letter-spacing: -0.5px;
+    margin-bottom: 10px;
 }
 
 .tagline {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: var(--secondary);
     font-weight: 300;
     margin-bottom: 20px;
@@ -112,7 +93,7 @@ h1 {
 .contact-info div {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 
 .contact-info i {
@@ -125,8 +106,8 @@ h2 {
     color: var(--primary);
     border-bottom: 2px solid var(--secondary);
     padding-bottom: 8px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-size: 1.4em;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -144,8 +125,8 @@ h3 {
 
 /* === EXPERIENCE & EDUCATION === */
 .job, .edu-item, .project-item {
-    margin-bottom: 25px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid var(--border);
 }
 
@@ -159,7 +140,7 @@ h3 {
     color: var(--gray);
     font-style: italic;
     margin-bottom: 8px;
-    font-size: 0.95em;
+    font-size: 0.9em;
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -259,27 +240,20 @@ h3 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    transition: var(--transition);
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    transition: background 0.3s ease;
 }
 
 #print-btn:hover {
     background: var(--secondary);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px var(--shadow);
 }
 
 .print-hint {
     color: var(--gray);
     font-size: 0.9em;
     margin-top: 10px;
-}
-
-/* === UTILITY CLASSES === */
-.no-print {
-    /* This class hides elements when printing */
 }
 
 /* === RESPONSIVE DESIGN === */
@@ -368,17 +342,7 @@ h3 {
 }
 
 @media print {
-    .compact {
-        margin-bottom: 0.3cm !important;
-    }
-    
-    .compact-text {
-        line-height: 1.25 !important;
-        margin-bottom: 0.2cm !important;
-    }
-    
-    /* Adjust spacing between sections */
-    section + section {
-        margin-top: 0.4cm !important;
+    .no-print {
+        display: none !important;
     }
 }
