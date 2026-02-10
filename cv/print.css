@@ -1,0 +1,134 @@
+/* === PRINT STYLES === */
+@media print {
+    /* Hide non-essential elements */
+    .no-print,
+    .print-button-container,
+    #availability,
+    .project-link {
+        display: none !important;
+    }
+    
+    /* Reset styles for printing */
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt !important;
+        line-height: 1.4 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    
+    .container {
+        box-shadow: none !important;
+        padding: 0 !important;
+        gap: 15px !important;
+        max-width: 100% !important;
+        display: block !important;
+    }
+    
+    /* Ensure links are black and don't have underline */
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+    
+    /* Adjust contact info for print */
+    .contact-info {
+        justify-content: flex-start !important;
+        flex-wrap: nowrap !important;
+        font-size: 10pt !important;
+        gap: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Section adjustments */
+    section {
+        margin-bottom: 20px !important;
+        page-break-inside: avoid;
+    }
+    
+    h1 {
+        font-size: 24pt !important;
+        color: black !important;
+        margin-bottom: 5px !important;
+    }
+    
+    h2 {
+        font-size: 14pt !important;
+        color: black !important;
+        border-bottom: 1px solid #666 !important;
+        margin-bottom: 10px !important;
+    }
+    
+    h3 {
+        font-size: 12pt !important;
+        color: black !important;
+    }
+    
+    .tagline {
+        font-size: 12pt !important;
+        color: #666 !important;
+    }
+    
+    /* Layout adjustments for print */
+    .main-content, .sidebar {
+        float: none !important;
+        width: 100% !important;
+        display: block !important;
+    }
+    
+    /* Lists */
+    ul {
+        margin-left: 0 !important;
+        padding-left: 20px !important;
+    }
+    
+    /* Meta information */
+    .meta {
+        font-size: 10pt !important;
+        color: #666 !important;
+    }
+    
+    /* Skills grid */
+    .skills-grid {
+        display: block !important;
+    }
+    
+    .skill-category {
+        margin-bottom: 10px !important;
+        page-break-inside: avoid;
+    }
+    
+    /* Avoid page breaks inside important elements */
+    .job, .project-item, .edu-item {
+        page-break-inside: avoid;
+    }
+    
+    /* Add page breaks where needed */
+    h2, h3 {
+        page-break-after: avoid;
+    }
+    
+    /* Print URLs after links */
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #666;
+    }
+    
+    /* Don't show URLs for certain links */
+    .contact-info a[href]:after,
+    a.project-link[href]:after {
+        content: "" !important;
+    }
+    
+    /* Adjust margins for printing */
+    @page {
+        margin: 1cm;
+    }
+    
+    @page :first {
+        margin-top: 1.5cm;
+    }
+}
