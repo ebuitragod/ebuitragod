@@ -16,23 +16,17 @@ Here are some ideas to get you started:
 -->
 
 # 💫 About Me:
-## Mathematician | Data/Backend engineer | Cybersecurity beginner.
+## Mathematician   |   Data / Backend engineer   |   Cybersecurity beginner.
 
-As a mathematician, I approach engineer with a foundation in curiosity
-and analytical rigor. My career is driven by building scalable backen systems
-and robust data pipelines, with expertise in distributed architectures (Docker, DAPR),
-data orchestration (Airflow), data ??? (FastAPI, Django), and databases
-(PostgreSQL, MongoDB, Memgraph).
+As a mathematician, I approach engineering with a foundation in curiosity and analytical rigor. My career is driven by building scalable backend systems and robust data pipelines, with expertise in distributed architectures (`Docker`, `DAPR`), workflow orchestration (`Apache Airflow`), `API` development (`FastAPI`, `Django`), and databases (`PostgreSQL`, `MongoDB`, `Memgraph`).
 
-I am currently enhancing my security mindset through a certified Cybersecurity
-bootcamp, having recently earned CompTIA A+ and Security+, with CySA targeted
-for completion early 2026.
+I am currently enhancing my security mindset through a certified Cybersecurity bootcamp, having recently earned `CompTIA A+` and `Security+` certifications, with `CySA+` targeted for completion by early 2026.
 
-I am seeking to collaborate on projects involving data frameworks, data management,
-and data governance, where I can apply my combined background in mathematics,
-backend development, and security fundamentals to solve complex data challenges.
+I am seeking to collaborate on projects involving data frameworks, data management, and data governance, where I can apply my combined background in mathematics, backend development, and security fundamentals to solve complex data challenges.
 
-Ask me about: Backend architecture, event-driven systems, ETL/ELT processes, workflow orchestration (Airflow), or the intersection of data engineering and security.
+### Ask me about: 
+Backend architecture, event-driven systems, `ETL` processes, workflow orchestration (`Airflow`), or the intersection of data engineering and security.
+
 
 
 ## 🌐 Socials:
