@@ -27,6 +27,9 @@ I am seeking to collaborate on projects involving data frameworks, data manageme
 ### Ask me about: 
 Backend architecture, event-driven systems, `ETL` processes, workflow orchestration (`Airflow`), or the intersection of data engineering and security.
 
+## Resumé
+[View Online](https://ebuitragod.github.io/ebuitragod/)
+
 
 
 ## 🌐 Socials:
