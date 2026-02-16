@@ -16,16 +16,32 @@ Here are some ideas to get you started:
 -->
 
 # 💫 About Me:
-## Mathematician   |   Data / Backend engineer   |   Cybersecurity beginner.
+## Mathematician   |   Data & Backend engineer   |   Cybersecurity specialist.
 
-As a mathematician, I approach engineering with a foundation in curiosity and analytical rigor. My career is driven by building scalable backend systems and robust data pipelines, with expertise in distributed architectures (`Docker`, `DAPR`), workflow orchestration (`Apache Airflow`), `API` development (`FastAPI`, `Django`), and databases (`PostgreSQL`, `MongoDB`, `Memgraph`).
+My mathematical foundation drives me to build data systems with both analytical rigor and security consciousness. I engineer scalable backend architectures (`Docker`, `DAPR`, `FastAPI`, `Django`) and robust data pipelines (`Apache Airflow`, `PostgreSQL`, `MongoDB`, `Memgraph`) with a security-first mindset.
 
-I am currently enhancing my security mindset through a certified Cybersecurity bootcamp, having recently earned `CompTIA A+` and `Security+` certifications, with `CySA+` targeted for completion by early 2026.
 
-I am seeking to collaborate on projects involving data frameworks, data management, and data governance, where I can apply my combined background in mathematics, backend development, and security fundamentals to solve complex data challenges.
+**🔒 Security-Engineered Data Systems:**  
 
-### Ask me about: 
-Backend architecture, event-driven systems, `ETL` processes, workflow orchestration (`Airflow`), or the intersection of data engineering and security.
+I bridge the gap between data engineering and cybersecurity, designing pipelines that are not only efficient but also resilient. My certified security expertise (`CompTIA Security+`, `A+`, Network Fundamentals) informs how I approach:
+
+- **Secure Data Pipelines:** Implementing encryption at rest/in-transit, access controls, and audit logging in ETL workflows
+
+- **Threat-Informed Engineering:** Building systems that anticipate attack vectors (injection, data exfiltration, privilege escalation)
+
+- **Compliance by Design:** Architecting data platforms with GDPR/SOC2 readiness from day one
+
+- **Security Tooling Integration:** Leveraging `Metasploit`, `Nmap`, and `Kali Linux` to validate system defenses
+
+
+**🤝 Open to collaborate on:**  
+Data platforms, event-driven architectures, ETL/ELT pipelines, data governance frameworks, and security-focused data engineering challenges.
+
+
+**💬 Ask me about:**  
+Backend architecture, distributed systems (`DAPR`, `Docker`), workflow orchestration (`Airflow`), or how to build data pipelines that are both performant *and* secure.
+
+
 
 ## Resumé
 [View Online](https://ebuitragod.github.io/ebuitragod/)
