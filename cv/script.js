@@ -1,39 +1,31 @@
-// script.js - Minimal interactivity for CV
+// script.js
+async function loadPartial(url) {
+    const response = await fetch(url);
+    return response.text();
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Print button functionality
-    const printButton = document.getElementById('print-btn');
-    if (printButton) {
-        printButton.addEventListener('click', function() {
-            window.print();
-        });
-    }
+async function loadAllPartials() {
+    const container = document.getElementById('cv-container');
     
-    // Add smooth scrolling for anchor links (if any)
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if (targetId !== '#') {
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 20,
-                        behavior: 'smooth'
-                    });
-                }
-            }
-        });
-    });
+    const header = await loadPartial('cv/sections/header.html');
+    const mainContent = `
+        <div class="main-content">
+            ${await loadPartial('cv/sections/main-content/profile.html')}
+            ${await loadPartial('cv/sections/main-content/experience.html')}
+            ${await loadPartial('cv/sections/main-content/projects.html')}
+        </div>
+    `;
+    const sidebar = `
+        <div class="sidebar">
+            ${await loadPartial('cv/sections/sidebar/skills.html')}
+            ${await loadPartial('cv/sections/sidebar/education.html')}
+            ${await loadPartial('cv/sections/sidebar/certifications.html')}
+            ${await loadPartial('cv/sections/sidebar/languages.html')}
+        </div>
+    `;
+    const footer = await loadPartial('cv/sections/footer.html');
     
-    // Add current year to footer if needed
-    const currentYear = new Date().getFullYear();
-    const yearElements = document.querySelectorAll('.current-year');
-    yearElements.forEach(el => {
-        el.textContent = currentYear;
-    });
-    
-    // Console greeting (optional)
-    console.log('CV loaded successfully!');
-    console.log('This CV was built with HTML/CSS/JS and is optimized for both web and print.');
-});
+    container.innerHTML = header + mainContent + sidebar + footer;
+}
+
+document.addEventListener('DOMContentLoaded', loadAllPartials);
