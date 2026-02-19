@@ -28,7 +28,7 @@ async function loadPartial(url) {
         return response.text();
     } catch (error) {
         console.error('Error loading partial:', error);
-        return ''; // Return empty string on error
+        return ''; 
     }
 }
 
@@ -41,27 +41,37 @@ async function loadAllPartials() {
     }
 
     try {
-        const header = await loadPartial(PATHS.header);
-        const mainContent = `
-            <div class="main-content">
-                ${await loadPartial(PATHS.mainContent.profile)}
-                ${await loadPartial(PATHS.mainContent.experience)}
-                ${await loadPartial(PATHS.mainContent.projects)}
-            </div>
-        `;
-        const sidebar = `
-            <div class="sidebar">
-                ${await loadPartial(PATHS.sidebar.skills)}
-                ${await loadPartial(PATHS.sidebar.education)}
-                ${await loadPartial(PATHS.sidebar.certifications)}
-                ${await loadPartial(PATHS.sidebar.languages)}
-            </div>
-        `;
-        const footer = await loadPartial(PATHS.footer);
+        const [header, footer] = await Promise.all([
+            loadPartial(PATHS.header),
+            loadPartial(PATHS.footer)
+        ]);
 
-        container.innerHTML = header + mainContent + sidebar + footer;
+        async function loadSection(sectionPath) {
+            const content = await Promise.all(
+                Object.values(sectionPath).map(path => loadPartial(path))
+            );
+            return content.join('');
+        }
+
+        const [mainContent, sidebar] = await Promise.all([
+            loadSection(PATHS.mainContent),
+            loadSection(PATHS.sidebar)
+        ]);
+
+        container.innerHTML = `
+            ${header}
+            <div class="main-content">
+                ${mainContent}
+            </div>
+            <div class="sidebar">
+                ${sidebar}
+                </div>
+            ${footer}
+        `;
+        console.log('All CV sections loaded successfully!');
     } catch (error) {
         console.error('Error loading CV sections:', error);
+        container.innerHTML = '<p>Sorry, there was an error loading the CV. Please contact me to ebuitragod@gmail.com, and I will happily send this CV in pdf.</p>';
     }
 }
 
