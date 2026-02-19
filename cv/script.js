@@ -8,6 +8,7 @@ async function loadAllPartials() {
     const container = document.getElementById('cv-container');
     
     const header = await loadPartial('cv/sections/header.html');
+
     const mainContent = `
         <div class="main-content">
             ${await loadPartial('cv/sections/main-content/profile.html')}
