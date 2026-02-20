@@ -60,7 +60,6 @@ ul {
     grid-column: 2;
 }
 
-/* === HEADER === */
 header {
     grid-column: 1 / -1;
     text-align: center;
@@ -202,11 +201,11 @@ h3 {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    gap: 1px;
 }
 
 .skill-category {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .skill-category h3 {
@@ -221,7 +220,7 @@ h3 {
 }
 
 .skill-category li {
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     padding-left: 15px;
     position: relative;
 }
@@ -231,6 +230,10 @@ h3 {
     position: absolute;
     left: 0;
     color: var(--secondary);
+}
+
+.skill-category li:last-child {
+    margin-bottom: 10px;
 }
 
 /* === AVAILABILITY SECTION === */

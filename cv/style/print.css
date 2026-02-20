@@ -152,18 +152,18 @@
         --border: #e1e8ed;
     }
 
-    /* Ocultar íconos de enlaces externos y hourglass */
     .cert-icon,
     .fas.fa-external-link-alt,
     .fas.fa-hourglass-half {
         display: none !important;
     }
     
-    /* Opcional: ajustar espaciado para compensar */
+
     .cert-item {
         margin-bottom: 8px;
     }
     
+    .edu-link,
     .cert-link {
         padding-left: 0 !important;
     }
