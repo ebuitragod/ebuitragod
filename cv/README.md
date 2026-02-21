@@ -22,3 +22,8 @@ This is my professional CV/Resume, built with HTML/CSS and optimized for both we
 2. Or use Ctrl+P (Cmd+P on Mac)
 3. Select "Save as PDF" as destination
 4. Use Chrome or Edge for best results
+
+To run locally: 
+```
+python3 -m http.server 8000
+```

@@ -43,10 +43,20 @@
     "source=/run/host-services/ssh-auth.sock,target=/run/host-services/ssh-auth.sock,type=bind"
   ],
   "postStartCommand": "cd .devcontainer && bash postStartCommand.sh",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "HTTP Server",
+      "onAutoForward": "notify"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-python.isort",
         "charliermarsh.ruff",
         "tamasfe.even-better-toml",
         "esbenp.prettier-vscode",
