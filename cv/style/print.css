@@ -28,8 +28,14 @@
     }
  
     a {
-        color: inherit !important;
         text-decoration: none !important;
+        color: #0066cc !important;
+    }
+
+    a[href]:after {
+        content: '' !important;
+        display: none !important;
+        color: var(--secondary) !important;
     }
 
     .container {
@@ -107,28 +113,26 @@
     }
 
     .contact-info {
-        display: inline !important;
+        display: block !important;
         justify-content: center !important;
         flex-wrap: wrap !important;
-        gap: 0px !important; 
     }
     
     .contact-info div {
-        display: inline-flex !important;
+        display: inline-block !important;
         align-items: center !important;
         white-space: nowrap !important;
-        gap: 0 !important;
     }
 
     .contact-info i {
-        display: inline !important;
-        color: var(--primary) !important;
-        font-size: 10pt !important;
+        display: inline;
+        white-space: inherit !important;
     }
-
+    
     .contact-info,
     .contact-info div,
     .contact-info i {
+        color: inherit !important;
         font-size: 10pt !important;
     }
 
@@ -164,16 +168,12 @@
 
     .skill-category {
         margin-top: 0 !important;
+        margin-bottom: 0 !important;
         page-break-before: avoid !important;
         break-before: avoid !important;
         font-size: 10pt !important;
     }
-
-    .skill-category li {
-        font-size: 10pt !important;
-        margin-top: 0 !important;
-    }
-
+    
     .skill-category h3 {
         font-size: 11pt !important;
         margin-top: 0 !important;
@@ -188,6 +188,21 @@
     p, li {
         font-size: 11pt !important;
     }
+    
+    .edu-item h3 {
+        font-size: 11pt !important;
+    }
+
+    .cert-item,
+    .cert-name,
+    .cert-date,
+    .edu-item .institution,
+    .edu-item .meta,
+    .skill-category li,
+    #languages li {
+        font-size: 10pt !important;
+        margin-top: 0 !important;
+    }
 
     @page {
         size: A4;
@@ -196,27 +211,5 @@
         margin-left: 1.5cm;
         margin-right: 1.5cm;
     }
-    
-    .cert-item,
-    .cert-name,
-    .cert-date {
-        font-size: 10pt !important;
-    }
-    
-    .edu-item h3 {
-        font-size: 11pt !important;
-    }
-    
-    .edu-item .meta {
-        font-size: 10pt !important;
-    }
 
-    .edu-item .institution {
-        font-size: 10pt !important;
-    }
-    
-    #languages li {
-        font-size: 10pt !important;
-    }
-    
 }
