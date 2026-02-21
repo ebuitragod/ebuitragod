@@ -8,3 +8,8 @@ sudo chmod 666 /run/host-services/ssh-auth.sock && sudo usermod -a -G $(stat -c 
 # Ensure no venv exists -> creates horrible to trace issues with UV
 rm -rf /workspaces/apps/.venv
 echo "=============== postStartCommand ran successfully. ==============="
+
+# Run command to run forward port 8000 to the host machine
+echo "Forwarding port 8000 to the host machine..."
+python3 -m http.server 8000 --directory /workspace
+

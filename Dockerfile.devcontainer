@@ -29,3 +29,8 @@ ENV PATH="/home/$USERNAME/.local/bin:$PATH" \
 
 COPY --chown=$USERNAME:$USERNAME requirements.txt /tmp/
 RUN pip install --user --no-cache-dir -r /tmp/requirements.txt
+
+ENV DEBIAN_FRONTEND=dialog
+EXPOSE 8000
+
+CMD ["sleep", "infinity"]
