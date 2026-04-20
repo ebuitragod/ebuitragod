@@ -19,7 +19,7 @@
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 11pt !important;
-        line-height: 1.6;
+        line-height: 1.4;
         color: inherit !important;
         background-color: white;
         max-width: 100%;
@@ -40,12 +40,12 @@
 
     .container {
         display: grid !important;
-        grid-template-columns: 2.4fr 1fr !important;
+        grid-template-columns: 2.8fr 1fr !important;
         gap: 10px !important;
-        padding: 15px !important; 
+        padding: 0.5cm 1.5cm 0.5cm 1.5cm !important;
         box-shadow: none !important;        
-        break-inside: auto !important;
-        page-break-inside: auto !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
     }
     
     .main-content {
