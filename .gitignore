@@ -29,16 +29,17 @@ share/python-wheels/
 MANIFEST
 
 # Docker
-**/.devcontainer.json
-**/Dockerfile
-**/.dockerignore
+# **/.devcontainer.json
+# **/Dockerfile
+# **/.dockerignore
+.devcontainer/devcontainer-lock.json
 
-#IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# #IDE
+# .vscode/
+# .idea/
+# *.swp
+# *.swo
+# *~
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

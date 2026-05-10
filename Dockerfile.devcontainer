@@ -21,6 +21,14 @@ RUN groupadd --gid $USER_GID $USERNAME \
  && echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/$USERNAME \
  && chmod 0440 /etc/sudoers.d/$USERNAME
 
+# Install node.js and npm
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install live-server globally
+RUN npm install -g live-server
+
 USER $USERNAME
 WORKDIR /workspace
 ENV PATH="/home/$USERNAME/.local/bin:$PATH" \
