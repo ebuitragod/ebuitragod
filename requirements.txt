@@ -1,0 +1,4 @@
+openapi-generator-cli
+openapi-generator-cli[jdk4py]
+fastapi==0.135.1
+uvicorn==0.42.0
