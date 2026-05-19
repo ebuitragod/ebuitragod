@@ -23,10 +23,7 @@ async function buildSkillsHTML() {
 }
 
 
-// ESPE: Cuidado con buildStaticSection vs buildStaticSections para importación circular
-
 async function buildStaticSection(sectionPaths, loadPartialFn) {
-    // ESPE: cuidado con importaciones circulares de loadPartial dentro de función
     const { loadPartial } = await import('./loaders.js');
     const content = await Promise.all(
         // Object.values(sectionPaths).map(path => loadPartialFn(path))
@@ -35,7 +32,6 @@ async function buildStaticSection(sectionPaths, loadPartialFn) {
     return content.join(""); 
 }
 
-// ESPE: Cuidado con loadPartial para importación circular, fuera de función
 import { loadPartial } from './loaders.js';
 
 async function buildStaticSections(sectionPaths) {

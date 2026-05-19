@@ -1,5 +1,4 @@
 import { PATHS } from "./constants.js";
-// ESPE cuidado con loadYAML por si se usa directamente
 import { loadPartial, loadYAML } from "./loaders.js";
 import { buildSkillsHTML, buildStaticSections } from "./builders.js";
 import { initializeInteractivity } from "./interactivity.js";

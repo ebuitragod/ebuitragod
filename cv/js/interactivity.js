@@ -6,7 +6,6 @@ export function initializeInteractivity() {
     printButton.addEventListener('click', () => window.print());
   }
 
-  // ESPE: revisar si sí: Enlaces externos (abrir en nueva pestaña)
   document.querySelectorAll("a[href^='http']").forEach(link => {
     if (!link.href.includes(window.location.hostname)) {
       link.setAttribute("target", "_blank");
