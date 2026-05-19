@@ -11,13 +11,14 @@ const PATHS = {
         projects: MAIN_CONTENT_PATH + 'projects.html'
     },
     sidebar: {
-        skills: SIDEBAR_PATH + 'skills.html',
+        // skills: SIDEBAR_PATH + 'skills.html',
         education: SIDEBAR_PATH + 'education.html',
         certifications: SIDEBAR_PATH + 'certifications.html',
         languages: SIDEBAR_PATH + 'languages.html'
     },
     footer: BASED_PATH + 'footer.html'
 };
+
 
 async function loadPartial(url) {
     try {
@@ -31,6 +32,27 @@ async function loadPartial(url) {
         return ''; 
     }
 }
+
+
+// Function to load skills from skills.yml >> cv/sections/sidebar/skills.html
+// and display them in the skills section
+async function buildSkillsHTML() {
+    const response = await fetch('/skills.yaml');
+    const yamlText = await response.text();
+    const skillsData = jsyaml.load(yamlText);
+
+    let html = `<h2><i class="fas fa-tools"></i> Core Skills</h2><div class="skills-grid">`;
+
+    for (const [category, content] of Object.entries(skillsData)) {
+        html += `<div class="skill-category"><h3>${category}</h3><ul>`;
+        const skillsList = Array.isArray(content) ? content : Object.values(content).flat();
+        skillsList.forEach(skill => html += `<li>${skill}</li>`);
+        html += `</ul></div>`;
+    }
+    html += `</div>`;
+    return html;
+}
+
 
 async function loadAllPartials() {
     const container = document.getElementById('cv-container');
@@ -53,10 +75,20 @@ async function loadAllPartials() {
             return content.join('');
         }
 
-        const [mainContent, sidebar] = await Promise.all([
+        const [mainContent, sidebarStatic] = await Promise.all([
             loadSection(PATHS.mainContent),
             loadSection(PATHS.sidebar)
         ]);
+        
+        const skillsHTML = await buildSkillsHTML();
+
+        // Build complet sidebar 
+        const sidebar = `
+            <div class="sidebar">
+                ${sidebarStatic}
+                ${skillsHTML}
+            </div>
+        `;
 
         container.innerHTML = `
             ${header}
@@ -74,6 +106,7 @@ async function loadAllPartials() {
         container.innerHTML = '<p>Sorry, there was an error loading the CV. Please contact me to ebuitragod@gmail.com, and I will happily send this CV in pdf.</p>';
     }
 }
+
 
 // ===== INTERACTIVITY FUNCTIONALITY =====
 function initializeInteractivity() {
@@ -99,5 +132,6 @@ function initializeInteractivity() {
         ');
 
 }
+
 
 document.addEventListener('DOMContentLoaded', loadAllPartials); 

@@ -109,3 +109,7 @@ dmypy.json
 
 # Ruff cache
 .ruff_cache
+
+# npm
+node_modules/
+package-lock.json
