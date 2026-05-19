@@ -1,0 +1,98 @@
+- title:
+    en: "Software Engineering Specialist"
+    de: "Softwareentwicklungsspezialist"
+  company:
+    en: "UNEOS / Freiburg, Deutschland (Fintech)"
+    de: "UNEOS / Freiburg, Deutschland (Fintech)"
+  date:
+    en: "August 2023 - July 2025"
+    de: "August 2023 - Juli 2025"
+  description:
+    en: 
+      - "Unified microservices into a monolith with DAPR/Colima in Docker. 
+        Streamlined development and deployment, reducing overhead by 30% and improving 
+        system reliability, while cutting infrastructure costs and keeping modularity intact." 
+      - Engineered a unified internal API layer and event-driven architecture pipelines
+        with FusionAuth to maintain modular boundaries, and ensure and secure dataflow 
+        within the system."
+    de: 
+      - "Zusammenführung von Microservices zu einem Monolithen mit DAPR/Colima in Docker. 
+        Optimierte Entwicklung und Bereitstellung, Reduzierung des Overheads um 30 % und 
+        Verbesserung der Systemzuverlässigkeit, bei gleichzeitiger Senkung der 
+        Infrastrukturkosten und Erhalt der Modularität.“"
+      - "Entwicklung einer einheitlichen internen API-Schicht und ereignisgesteuerter 
+        Architekturpipelines mit FusionAuth zur Aufrechterhaltung modularer Grenzen und 
+        zur Sicherstellung eines sicheren Datenflusses innerhalb des Systems."
+
+- title:
+    en: "Software and Data Engineer"
+    de: "Software- und Dateningenieur"
+  company:
+    en: "Agranimo / Berlin, Deutchland and Barcelona, España (Agritech)"
+    de: "Agranimo / Berlin, Deutschland und Barcelona, ​​Spanien (Agritech)"
+  date:
+    en: "April 2021 - Juni 2023"
+    de: "April 2021 - Juni 2023"
+  description:
+    en: 
+      - "Developed predictive models using MongoDB time-series data to optimize fungicide 
+        application, reducing crop losses by 15% through data-driven intervention timing."
+      - "Building and maintaining automated Airflow pipelines to process over 400 daily 
+        sensor data streams via API, implementing Celery tasks and RabbitMQ for asynchronous 
+        processing, reliable message delivery, and fault tolerance."
+    de: 
+      - "Entwickelte prädiktive Modelle auf Basis von MongoDB-Zeitreihendaten zur Optimierung 
+        der Fungizidanwendung und reduzierte Ernteverluste durch datengesteuerte 
+        Interventionszeitpunkte um 15 %."
+      - "Aufbau und Wartung automatisierter Airflow-Pipelines zur Verarbeitung von täglich 
+        über 400 Sensor-Datenströmen via API, unter Implementierung von Celery-Tasks und RabbitMQ 
+        für asynchrone Verarbeitung, zuverlässige Nachrichtenübermittlung und Fehlertoleranz."
+
+- title:
+    en: "Product lead B2B"
+    de: "Produktleiter B2B"
+  company:
+    en: "Platzi / Bogotá, Colombia (Edtech)"
+    de: "Platzi / Bogotá, Kolumbien (Edtech)"
+  date:
+    en: "October 2019 - June 2020"
+    de: "Oktober 2019 – Juni 2020"
+  description:
+    en: 
+      - "Led product strategy for the B2B segment and conducted user research and competitive 
+        analyses, which led to the development of a tailored learning platform for businesses."
+      - "Defined key success metrics and implemented iterative, data-driven feedback loops for 
+        product improvement—resulting in a 20% increase in customer satisfaction and a 15% 
+        increase in MRR."
+    de: 
+      - "Leitete die Produktstrategie für das B2B-Segment und führte Nutzerforschung sowie 
+        Wettbewerbsanalysen durch, was zur Entwicklung einer maßgeschneiderten Lernplattform 
+        für Unternehmen führte."
+      - "Definierte Erfolgskennzahlen und implementierte iterative, datengestützte 
+        Feedback-Schleifen zur Produktverbesserung – was zu einem Anstieg der Kundenzufriedenheit
+        um 20 % sowie einer Steigerung des MRR um 15 % führte."
+
+- title:
+    en: "Data Scientist"
+    de: "Data Scientist"
+  company:
+    en: "CNC - Centro Nacional de Consultoría / Bogotá, Colombia (Consulting)"
+    de: "CNC - Centro Nacional de Consultoría / Bogotá, Kolumbien (Consulting)"
+  date:
+    en: "June 2020 - February 2021"
+    de: "Juni 2020 – Februar 2021"
+  description:
+    en:
+      - "Developed ETL pipelines and the database design for Colombia's COVID-19 
+        repository using Django and PostgreSQL. Ensured data integrity as well as 
+        the 24/7 availability of critical health data."
+      - "Implemented data validation protocols and automated quality checks, reducing 
+        the manual effort required for data verification by 30% while simultaneously 
+        strengthening confidence in downstream analyses and reporting."
+    de:
+     - "Entwickelte ETL-Pipelines und das Datenbankdesign für das COVID-19-Repository 
+        Kolumbiens unter Verwendung von Django und PostgreSQL. Sicherte die Datenintegrität 
+        sowie die 24/7-Verfügbarkeit kritischer Gesundheitsdaten."
+     - "Implementierte Datenvalidierungsprotokolle und automatisierte Qualitätsprüfungen,
+        wodurch der manuelle Überprüfungsaufwand für Daten um 30 % reduziert und gleichzeitig das 
+        Vertrauen in nachgelagerte Analysen und Berichterstattungen gestärkt wurde."
