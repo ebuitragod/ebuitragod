@@ -4,6 +4,7 @@ const MAIN_CONTENT_PATH = BASED_PATH + 'main-content/';
 const SIDEBAR_PATH = BASED_PATH + 'sidebar/';
 
 const PATHS = {
+    // js/constants.js
     header: BASED_PATH + 'header.html',
     mainContent: {
         profile: MAIN_CONTENT_PATH + 'profile.html',
@@ -21,6 +22,7 @@ const PATHS = {
 
 
 async function loadPartial(url) {
+    // cv/js/loaders.js
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -37,9 +39,12 @@ async function loadPartial(url) {
 // Function to load skills from skills.yml >> cv/sections/sidebar/skills.html
 // and display them in the skills section
 async function buildSkillsHTML() {
+    // cv/js/builders.js
+
     const response = await fetch('/skills.yaml');
     const yamlText = await response.text();
     const skillsData = jsyaml.load(yamlText);
+        // cv/js/loaders.js >> loadYAML() function  
 
     let html = `<h2><i class="fas fa-tools"></i> Core Skills</h2><div class="skills-grid">`;
 
@@ -109,6 +114,7 @@ async function loadAllPartials() {
 
 
 // ===== INTERACTIVITY FUNCTIONALITY =====
+// cv/js/interactivity.js
 function initializeInteractivity() {
     const printButton = document.getElementById('print-btn');
     if (printButton) {
