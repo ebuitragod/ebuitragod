@@ -1,4 +1,5 @@
-- title:
+Uneos:
+  title:
     en: "Software Engineering Specialist"
     de: "Softwareentwicklungsspezialist"
   company:
@@ -24,7 +25,8 @@
         Architekturpipelines mit FusionAuth zur Aufrechterhaltung modularer Grenzen und 
         zur Sicherstellung eines sicheren Datenflusses innerhalb des Systems."
 
-- title:
+Agranimo:
+  title:
     en: "Software and Data Engineer"
     de: "Software- und Dateningenieur"
   company:
@@ -48,7 +50,8 @@
         über 400 Sensor-Datenströmen via API, unter Implementierung von Celery-Tasks und RabbitMQ 
         für asynchrone Verarbeitung, zuverlässige Nachrichtenübermittlung und Fehlertoleranz."
 
-- title:
+Platzi:
+  title:
     en: "Product lead B2B"
     de: "Produktleiter B2B"
   company:
@@ -72,7 +75,8 @@
         Feedback-Schleifen zur Produktverbesserung – was zu einem Anstieg der Kundenzufriedenheit
         um 20 % sowie einer Steigerung des MRR um 15 % führte."
 
-- title:
+CNC:
+  title:
     en: "Data Scientist"
     de: "Data Scientist"
   company:

@@ -1,4 +1,5 @@
-- title:
+Contract Management System:
+  title:
     en: 
       "Integrated contract managment system | FastAPI, PostgreSQL, 
       Docker, Alembic, CORS"
@@ -15,7 +16,8 @@
       Änderungsmanagement, fachliche Zuweisungen, Berichtsperioden, technische Berichte sowie Mengenbescheinigungen. 
       Implementierung einer snapshot-basierten Budgetverfolgung, von Preisbildungsmatrizen für Ressourcen sowie rollenbasierter Validierungen."
 
-- title:
+Task Orchestrator:
+  title:
     en: 
       "Distributed Task Orchestrator | Python, FastAPI, RabbitMQ, Docker, Celery"
     de: 
@@ -29,7 +31,8 @@
       Workflow-Systems ähnlich Apache Airflow, mit Fokus auf Zuverlässigkeit und 
       horizontaler Skalierbarkeit." 
 
-- title:
+Data Pipeline for IoT Analytics:
+  title:
     en:
       "Real-time Data Pipeline for IoT Analytics, PostgreSQL, Memgraph, RabbitMQ, Docker"
     de:
