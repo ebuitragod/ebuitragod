@@ -12,9 +12,9 @@ PATHS.main = {
   profile: PATHS.mainContent + "profile.html",
   experience: PATHS.mainContent + "experience.html",
   projects: PATHS.mainContent + "projects.html",
+  education: PATHS.sidebar + "education.html",
 };
 PATHS.sidebarStatic = {
-  education: PATHS.sidebar + "education.html",
   certifications: PATHS.sidebar + "certifications.html",
   languages: PATHS.sidebar + "languages.html",
 };
