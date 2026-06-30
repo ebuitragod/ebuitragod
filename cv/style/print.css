@@ -42,7 +42,9 @@
         display: grid !important;
         grid-template-columns: 2.8fr 1fr !important;
         gap: 10px !important;
-        padding: 0.5cm 1.5cm 0.5cm 1.5cm !important;
+        padding: 0 !important;  
+        /* padding: 0.5cm 1.5cm 0.5cm 1.5cm !important; */
+        margin: 0 !important;
         box-shadow: none !important;        
         break-inside: avoid !important;
         page-break-inside: avoid !important;
@@ -71,7 +73,7 @@
     }
 
     .sidebar h2 {
-        font-size: 13pt !important;
+        font-size: 12pt !important;
     }
     
     .sidebar h3 {
@@ -82,32 +84,32 @@
         font-size: 11pt !important;
         grid-column: 1 / -1 !important;
         text-align: center !important;
-        margin-bottom: 3px !important;
-        padding-bottom: 20px !important;
+        margin-bottom: 5px !important;
+        padding-bottom: 5px !important;
         border-bottom: 1px solid var(--light) !important;
         flex-direction: column !important;
     }
     
     h1 {
-        font-size: 20pt !important;
+        font-size: 18pt !important;
         color: var(--primary) !important;
         margin-bottom: 0px !important;
     }
 
     h2 {
-        font-size: 14pt !important;
+        font-size: 13pt !important;
         color: var(--primary) !important;
         margin-bottom: 0px !important;
     }
 
     h3 {
-        font-size: 12pt !important;
+        font-size: 11pt !important;
         color: var(--primary) !important;
         margin-bottom: 0px !important;
     }
 
     .tagline {
-        font-size: 13pt !important;
+        font-size: 12pt !important;
         color: var(--secondary) !important;
         margin-top: 0 !important;
     }
@@ -139,14 +141,14 @@
     footer {
         grid-column: 1 / -1;
         text-align: center;
-        margin-top: 0px;
-        padding-top: 0px;
+        margin-top: 0;
+        padding-top: 0;
         border-top: 1px solid var(--light);
-        font-size: 9pt !important;
+        font-size: 8pt !important;
     }
 
     footer .contact-info {
-        font-size: 9pt !important;
+        font-size: 8pt !important;
     }
     
     .edu-item,
@@ -163,7 +165,8 @@
         gap: 0 !important;
         break-inside: avoid !important;
         page-break-inside: avoid !important;
-        font-size: 10pt !important;
+        font-size: 9pt !important;
+        break-inside: auto !important;
     }
 
     .skill-category {
@@ -171,26 +174,26 @@
         margin-bottom: 0 !important;
         page-break-before: avoid !important;
         break-before: avoid !important;
-        font-size: 10pt !important;
+        font-size: 9pt !important;
     }
     
     .skill-category h3 {
-        font-size: 11pt !important;
+        font-size: 10pt !important;
         margin-top: 0 !important;
     }
     
     section {
         page-break-inside: auto !important;
         break-inside: auto !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 9px !important;
     }
     
     p, li {
-        font-size: 11pt !important;
+        font-size: 10pt !important;
     }
     
     .edu-item h3 {
-        font-size: 11pt !important;
+        font-size: 10pt !important;
     }
 
     .cert-item,
@@ -200,16 +203,22 @@
     .edu-item .meta,
     .skill-category li,
     #languages li {
-        font-size: 10pt !important;
+        font-size: 9pt !important;
         margin-top: 0 !important;
     }
 
     @page {
         size: A4;
-        margin-top: 2cm;
+        margin-top: 1cm;
         margin-bottom: 1cm !important;
         margin-left: 1.5cm;
         margin-right: 1.5cm;
+    }
+
+    header,
+    .container > :first-child {
+        page-break-before: avoid !important;
+        break-before: avoid !important;
     }
 
 }

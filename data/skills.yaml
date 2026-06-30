@@ -1,0 +1,300 @@
+Cybersecurity:
+  defense:
+    - Network Security, Endpoint Security
+    # - Cloud Security
+    # - Application Security
+    - Identity and Access Management (IAM)
+  offense:
+    - Vulnerability Assessment, Malware Analysis
+    # - Vulnerability Scanning
+    # - Penetration Testing
+  # tools:
+    # - Wireshark
+    # - Metasploit
+    # - Nmap
+    # - Burp Suite
+    # - Nessus
+    # - SIEM tools
+    # - OSINT tools
+    # - John the Ripper
+    # - Hydra
+  principles:
+    - Ethical Hacking Principles
+    - Security Best Practices
+
+Backend Development:
+  languages:
+    - Python
+    # - PHP
+    # - R
+  frameworks:
+    - FastAPI, Django
+  databases:
+    - PostgreSQL, MySQL, MongoDB
+  tools:
+    - Docker, Kubernetes, DAPR
+    - FusionAuth, OAuth2
+    - RabbitMQ, Celery
+    - Alembic, CORS
+  apis:
+    - RESTful API Development, OpenAPI
+
+Data Engineering:
+  languages:
+    - PySpark
+  frameworks:
+    - Apache Airflow, Kafka
+    - ETL / ELT, dbt
+  databases:
+    - PostgreSQL, MySQL, MongoDB, Memgraph
+  tools:
+    - RabbitMQ, Pub/Sub
+    - Data Pipelines, Data Modeling
+    - Data Warehousing, Database Design
+    # - Azure Functions
+  concepts:
+    - DAG (Directed Acyclic Graph)
+
+DevOps:
+  tools:
+    - Docker, Kubernetes, Colima
+    - CI/CD (GitHub Actions)
+    - Infrastructure as Code (Terraform)
+  cloud:
+    - AWS
+    - Azure (incl. Azure Functions, SQL)
+  # monitoring:
+    # - Grafana
+  # containerization:
+    # - Docker
+    # - Kubernetes
+    # - Colima
+
+# Machine Learning & AI:
+#   frameworks:
+#     - PyTorch, Scikit‑learn
+#     - LangChain & TensorFlow (familiar)
+#   specialized:
+#     - LLM evaluation, RAG pipelines
+#     - Prompt engineering, Predictive modeling
+#     - Time‑series analysis
+#   data_science:
+#     - Statistical & Mathematical Analysis
+#     - Exploratory Data Analysis (EDA)
+#     - Data Visualization
+#   tools:
+#     - Jupyter / JupyterLab, NumPy, Pandas
+#     - SciPy, R, Tableau
+#   concepts:
+#     - End‑to‑end ML lifecycle
+#     - Algorithm Development
+#     - Mathematical Modelling & Implementation
+
+Architecture:
+  design_patterns:
+    - Microservices <> Monolith
+    - Event‑Driven & Layered Architecture
+  methodologies:
+    - Domain‑Driven Design (DDD)
+  # specialization:
+  #   - System Architecture
+  #   - Distributed Systems
+
+# Research & HCI:
+#   areas:
+#     - Human‑Computer Interaction (HCI)
+#     - Mathematical Logic
+#     - User‑centered Design & Studies
+#     - Usability Testing
+#   analysis:
+#     - Mathematical Analysis & Modelling
+
+# LLMs and AI:
+#   areas:
+#     - Integration and evaluation of LLMs
+#     - Systematic Optimization, Ethical AI development, Prompt Engineering
+#     - Predictive Modelingm Statistical Analysis
+#     - Data Visualization
+
+# Project Management:
+#   methodologies:
+#     - Agile, Scrum, Kanban
+#   tools:
+#     - Jira, Trello, Asana, Confluence, Slack
+
+Testing:
+  types:
+    - Unit & Integration Testing
+    - System & Acceptance Testing
+  tools:
+    - Selenium, Postman
+    - pytest & unitest (implied)
+
+# Version Control:
+#   systems:
+#     - Git
+#   platforms:
+#     - GitHub
+#     - GitLab
+#     - Bitbucket
+
+Methodologies:
+  - Microservices, Monolith
+  - Agile/Scrum & Event‑Driven Design
+
+Soft Skills:
+  - Communication
+  - Problem Solving
+  - Teamwork
+  - Time Management
+  - Leadership
+  - Critical Thinking
+  - Adaptability
+  - Creativity
+  - Emotional Intelligence
+  - Conflict Resolution
+  - Self‑motivation
+  - Organization
+  - Decision Making
+  - Collaboration
+  - Mentoring
+  - Code Review
+  - Documentation
+  - Knowledge Sharing
+
+
+# Objective skills INQUA:
+#   - administrative coordination
+#   - document management
+#   - organisational awareness
+#   - educational assessment
+#   - autonomous learning skills
+#   - knowledge of mathematical modelling
+#   - knowledge of quantitative analysis
+#   - abstract reasoning
+#   - instructional planning skills
+#   - examination preparation skills
+#   - talent acquisition skills
+#   - staff coordination skills
+#   - stakeholder engagement skills
+
+#   - formal logic
+#   - analytical problem-solving
+#   - theoretical reasoning
+#   - office administration skills
+#   - records management skills
+#   - process support skills
+#   - sales strategy skills
+#   - customer acquisition
+#   - digital content management
+#   - media communication skills
+#   - brand promotion
+#   - cross-cultural collaboration skills
+#   - international networking skills
+#   - business partnership building skills
+
+#   - product ownership skills
+#   - requirements management skills
+#   - stakeholder coordination skills
+#   - office administration
+#   - operational support
+#   - workflow organisation
+#   - customer relationship management skills
+#   - data maintenance skills
+#   - user support skills
+#   - software administration
+#   - logistics coordination
+#   - process optimisation
+#   - supply chain oversight
+#   - operational planning skills
+#   - service delivery management
+
+#   - product strategy
+#   - platform development skills
+#   - industry knowledge of business-to-business markets
+#   - large-scale data processing skills
+#   - data pipeline management
+#   - information delivery
+#   - skills in agricultural data analysis
+#   - knowledge of decision support development
+#   - knowledge of domain-specific data interpretation
+#   - knowledge of database design
+#   - knowledge of data architecture and integration
+#   - knowledge of data collection and processing systems
+
+#   - knowledge of software engineering
+#   - knowledge of financial technology
+#   - technical problem-solving skills
+#   - knowledge of database architecture and optimisation
+#   - knowledge of data modelling
+#   - skills in application integration
+#   - skills in server-side programming
+#   - frontend development
+#   - user interface implementation
+#   - client-side application design
+#   - regulatory compliance
+#   - certification support
+#   - quality assurance
+
+# Narrative skills INQUA:
+#   - commun- affinity to learning
+#   - commitment
+#   - problem solving
+#   - self-reliance
+#   - goal orientation
+#   - adaptability
+#   - decisiveness
+#   - motivation
+#   - performance
+#   - reflective faculty
+#   - flexibility
+#   - holistic thinking
+
+#   - teamwork
+#   - commitment
+#   - willingness to develop
+#   - self-reliance
+#   - adaptability
+#   - flexibility
+#   - intercultural skills
+#   - mobility
+#   - interpersonal orientation
+#   - persistence
+#   - performance
+
+#   - ability of implementation
+#   - decisiveness
+#   - initiative
+#   - adaptability
+#   - flexibility
+#   - intrinsic motivation
+#   - commitment
+#   - holistic thinking
+#   - empathy
+#   - self-reliance
+#   - performance
+
+#   - commitment
+#   - adaptability
+#   - flexibility
+#   - self-reliance
+#   - initiative
+#   - persistence
+#   - ability of implementation
+#   - intrinsic motivation
+#   - enthusiasm
+#   - performance
+
+#   - discipline
+#   - reliability
+#   - responsibility
+#   - performance
+#   - commitment
+#   - self-reliance
+#   - affinity to learning
+#   - flexibility
+#   - adaptability
+#   - motivation
+#   - enthusiasm
+#   - willingness to develop
+#   - reflective faculty

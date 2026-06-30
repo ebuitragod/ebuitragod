@@ -1,0 +1,220 @@
+Cybersecurity:
+  defense:
+    - Network Security
+    - Endpoint Security
+    - Cloud Security
+    - Application Security
+    - Identity and Access Management (IAM)
+  offense:
+    - Vulnerability Assessment
+    - Vulnerability Scanning
+    - Penetration Testing
+    - Malware Analysis
+  tools:
+    - Wireshark
+    - Metasploit
+    - Nmap
+    - Burp Suite
+    - Nessus
+    - SIEM tools
+    - OSINT tools
+    - John the Ripper
+    - Hydra
+  certifications:
+    - CompTIA Security+
+    - CompTIA CySA+
+    - CompTIA A+
+  principles:
+    - Ethical Hacking Principles
+    - Security Best Practices
+
+Backend Development:
+  languages:
+    - Python
+    - PHP
+    - R
+  frameworks:
+    - FastAPI
+    - Django
+    - Flask
+  databases:
+    - PostgreSQL
+    - MySQL
+    - MongoDB
+  tools:
+    - Docker
+    - Kubernetes
+    - Git
+    - FusionAuth
+    - DAPR
+    - RabbitMQ
+    - Celery
+    - Alembic
+    - CORS
+  apis:
+    - RESTful API Development
+    - OpenAPI
+    - OAuth2
+  operating_systems:
+    - Linux (Fedora, Ubuntu)
+    - macOS
+
+Data Engineering:
+  languages:
+    - Python
+    - SQL
+    - PySpark
+  frameworks:
+    - Apache Airflow
+    - ETL / ELT
+    - dbt
+    - Apache Kafka
+  databases:
+    - PostgreSQL
+    - MySQL
+    - MongoDB
+    - Memgraph
+  tools:
+    - RabbitMQ
+    - Pub/Sub
+    - Data Pipelines
+    - Data Modeling
+    - Database Design
+    - Azure Functions
+  concepts:
+    - DAG (Directed Acyclic Graph)
+    - Data Warehousing
+
+DevOps:
+  tools:
+    - Docker
+    - Kubernetes
+    - CI/CD (GitHub Actions)
+    - Infrastructure as Code (Terraform)
+  cloud:
+    - AWS
+    - Azure (incl. Azure Functions, SQL)
+  monitoring:
+    - Grafana
+  containerization:
+    - Docker
+    - Kubernetes
+    - Colima
+
+Machine Learning & AI:
+  languages:
+    - Python
+    - R
+  frameworks:
+    - PyTorch
+    - Scikit‑learn
+    - LangChain (familiar)
+    - TensorFlow (familiar)
+  specialized:
+    - LLM evaluation
+    - RAG pipelines
+    - Prompt engineering
+    - Predictive modeling
+    - Time‑series analysis
+  data_science:
+    - Statistical Analysis
+    - Mathematical Statistics
+    - Exploratory Data Analysis (EDA)
+    - Data Visualization
+  tools:
+    - Jupyter / JupyterLab
+    - NumPy
+    - Pandas
+    - SciPy
+    - Tableau
+  concepts:
+    - End‑to‑end ML lifecycle
+    - Algorithm Development
+    - Mathematical Modelling
+    - Mathematical Implementation
+
+Architecture:
+  design_patterns:
+    - Microservices
+    - Monolith
+    - Event‑Driven Architecture
+    - Layered Architecture
+  methodologies:
+    - Domain‑Driven Design (DDD)
+  specialization:
+    - System Architecture
+    - Distributed Systems
+
+Research & HCI:
+  areas:
+    - Human‑Computer Interaction (HCI)
+    - Mathematical Logic
+    - User‑centered Design
+    - User Studies
+    - Usability Testing
+  analysis:
+    - Mathematical Analysis
+    - Mathematical Modelling
+
+LLMs and AI:
+  areas:
+    - Integration and evaluation of LLMs
+    - Prompt Engineering
+    - Systematic Optimization
+    - Ethical AI development
+    - Predictive Modeling
+    - Statistical Analysis
+    - Data Visualization
+
+Project Management:
+  methodologies:
+    - Agile
+    - Scrum
+    - Kanban
+  roles:
+    - Product Lead (B2B)
+  tools:
+    - Jira 
+    - Trello
+    - Asana
+    - Confluence
+    - Slack
+
+Testing:
+  types:
+    - Unit Testing
+    - Integration Testing
+    - System Testing
+    - Acceptance Testing
+  tools:
+    - Selenium
+    - Postman
+    - pytest & unitest (implied)
+
+Version Control:
+  systems:
+    - Git
+  platforms:
+    - GitHub
+    - GitLab
+    - Bitbucket
+
+Methodologies:
+  - Agile/Scrum
+  - Microservices
+  - Monolith
+  - Event‑Driven Design
+
+Soft Skills:
+  - Communication
+  - Problem Solving
+  - Teamwork
+  - Time Management
+  - Leadership
+  - Critical Thinking
+  - Adaptability
+  - Creativity
+  - Emotional Intelligence
+  - Conflict Resolution
+  - Self‑motivation
+  - Organization

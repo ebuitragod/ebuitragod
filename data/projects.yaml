@@ -1,0 +1,47 @@
+Contract Management System:
+  title:
+    en: 
+      "Integrated contract managment system | FastAPI, PostgreSQL, 
+      Docker, Alembic, CORS"
+    de:
+      "Integriertes Vertragsverwaltungssystem | FastAPI, PostgreSQL, 
+      Docker, Alembic, CORS"
+  description:
+    en:
+      "Development of a full-stack web application for contract lifecycle management, service orders,
+      change management, functional assignments, reporting periods, technical reports, and quantity certificates.
+      Implementation of snapshot-based budget tracking, resource pricing matrices, and role-based validations."
+    de:
+      "Entwicklung einer Full-Stack-Webanwendung für Vertragslebenszyklus-Management, Serviceaufträge,
+      Änderungsmanagement, fachliche Zuweisungen, Berichtsperioden, technische Berichte sowie Mengenbescheinigungen. 
+      Implementierung einer snapshot-basierten Budgetverfolgung, von Preisbildungsmatrizen für Ressourcen sowie rollenbasierter Validierungen."
+
+Task Orchestrator:
+  title:
+    en: 
+      "Distributed Task Orchestrator | Python, FastAPI, RabbitMQ, Docker, Celery"
+    de: 
+      "Verteiltes Task-Orchestrierungssystem | Python, FastAPI, RabbitMQ, Docker, Celery"
+  description:
+    en:
+      "Designed and implemented a proof-of-concept event-driven workflow system similar 
+      to Apache Airflow, focusing on reliability and horizontal scalability."
+    de:
+      "Entwurf und Implementierung eines Proof-of-Concept ereignisgesteuerten 
+      Workflow-Systems ähnlich Apache Airflow, mit Fokus auf Zuverlässigkeit und 
+      horizontaler Skalierbarkeit." 
+
+Data Pipeline for IoT Analytics:
+  title:
+    en:
+      "Real-time Data Pipeline for IoT Analytics, PostgreSQL, Memgraph, RabbitMQ, Docker"
+    de:
+      "Echtzeit-Datenpipeline für IoT-Analysen, PostgreSQL, Memgraph, RabbitMQ, Docker"
+  description:
+    en:
+      "Built a pipeline to process and analyze streaming sensor data, utilizing a 
+      graph database (Memgraph) to uncover complex relationship patterns."
+    de:
+      "Entwickelte eine Pipeline zur Verarbeitung und Analyse von Streaming-Sensordaten
+      unter Einsatz einer Graphdatenbank (Memgraph), um komplexe Beziehungsmuster 
+      aufzudecken."
