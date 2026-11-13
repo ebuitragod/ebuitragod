@@ -1,0 +1,10 @@
+tunnel: e07687b2-3201-4a6b-942f-9b58b9393243
+credentials-file: /etc/cloudflared/credentials.json
+warp-routing:
+  enable: true
+
+ingress:
+  - hostname: cv-ebuitragod.abocaditos.org
+    service: http://cv-app:80
+  - service: http_status:404
+
