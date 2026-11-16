@@ -31,7 +31,7 @@ MANIFEST
 # Docker
 # **/.devcontainer.json
 # **/Dockerfile
-# **/.dockerignore
+.dockerignore
 .devcontainer/devcontainer-lock.json
 
 # #IDE
@@ -113,3 +113,9 @@ dmypy.json
 # npm
 node_modules/
 package-lock.json
+
+
+# Cludflare secrets
+cloudflared/credentials.json
+
+{
